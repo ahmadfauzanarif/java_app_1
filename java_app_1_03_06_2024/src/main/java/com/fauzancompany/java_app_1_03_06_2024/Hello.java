@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package com.fauzancompany.java_app_1_03_06_2024;
+import java.util.Scanner;  // Import the Scanner class
 
 /**
  *
@@ -11,12 +12,25 @@ package com.fauzancompany.java_app_1_03_06_2024;
  */
 public class Hello {
     public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        int inputNilai;
+        int nilaikkm = 85;
+        
+        System.out.println("Input Nilai"); 
+        inputNilai = myObj.nextInt();  
+        
+        if (inputNilai <= nilaikkm) {
+            System.out.println("Saya Tidak Lulus");
+        } else {
+            System.out.println("Saya Lulus gais");
+        }
         
         // Init Variabel
         int umur = 99;
         String nama = "Ahmad Fauzan Arif";
         String akademik = "Institut Asia Malang";
         String hobi = "Makan dan Tidur";
+        
         
         // Output
         System.out.println("-------------------------------------------");
